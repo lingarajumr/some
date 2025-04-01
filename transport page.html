@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bus form</title>
+    <link  href="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201405/telangana-govt_660_053114102100.jpg" type="image">
+    <style>
+        #top{
+            border: 2px;
+            border-style:ridge;
+            border-radius: 20px;
+            background-color:rgba(135, 206, 250, 0.558);
+            padding:10px 20px;
+            width: 50%;
+
+        }
+        legend{
+            border: 3px;
+            border-style:inset;
+            border-radius: 8px;
+            background-color:burlywood;
+            padding: 4px 20px;
+            
+
+
+        }
+        fieldset{
+            width: 50%;
+            border-radius: 20px;
+            background-color: rgba(12, 57, 57, 0.044);
+        }
+        input{ padding: 5px ;
+            text-align: center;
+            
+            border-radius: 10px;
+        }
+        #head{
+            border: 2px;
+            border-style:inset;
+            padding: 10px;
+            word-spacing: 15px;
+            
+        }
+        a{
+            text-decoration:none;
+            color: black;
+        }
+        #table{
+            border-collapse: collapse;
+            width: 50%;
+        }
+        #td{
+            border: 1px solid;
+            padding: 10px;
+        }
+        
+     
+
+
+       
+    </style>
+</head>
+<body><center>
+    <div id="top">
+    
+    <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201405/telangana-govt_660_053114102100.jpg" width="40px" height="40px">
+
+    <h3 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h3>
+    
+    <h4>GENERAL BUS PASS APPLICATION</h4></center></div><br><br>
+    <center>
+        <table id="table">
+            <tr>
+                <td id="td">   <a href="#submit">submit</a></td>
+                <td id="td">  <a href="#ad">applicant.details</a></td>
+                <td id="td">  <a href="#rd">Residential.details</a></td>
+                <td id="td"> <a href="#pd">passtype.details</a></td>
+                <td id="td"><a href="#pt">payment.type</a></table></td>
+            </tr>
+            </table><br>
+    <form action="html programs/form2.html">
+    <fieldset id="ad" ><legend>Applicant Details</legend>
+        
+    <table cellspacing="20" >
+
+     <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text"  id="name" placeholder="first name" required></td>
+        <td> <label for="father">Father Name:</label></td>
+        <td><input type="text" id="father" placeholder="name in capital" minlength="5" maxlength="20" required></td>
+    </tr>
+
+    <tr>
+         <td><label for="date">Date of Birth</label></td>
+        <td><input type="date" ></td>
+        <td><label for="gender">gender:</label></td>
+        <td><label for="male">male</label>
+            <input type="radio" id="male" name="gender" required>
+            <label for="female">female</label>
+            <input type="radio" id="female" name="gender" required>
+            <label for="others">others</label>
+            <input type="radio" id="others" name="gender"></td>
+    
+    </tr>
+    <tr>
+        <td><label for="age">Age</label></td>
+
+        <td><input type="text" id="years" style="width: 10px; height: 10px;border-radius: 0%;">
+        <label for="years">(years)</label>
+        <input type="text" id="months" style="width: 10px; height: 10px; border-radius: 0%;">
+        <label for="months">(months)</label>
+        <input type="text" id="days" style="width: 10px;height: 10px; border-radius: 0%;">
+        <label for="days">(days)</label>
+        </td>
+        <td><label for="adhar">Aadhaar No:</label></td>
+        <td><input type="text" id="adhar" placeholder="12 digits must"></td>
+     </tr>
+     <tr>
+        <td><label for="chat">whatsapp No:</label></td>
+        <td><input type="text"  id="chat" placeholder="perminant" ></td>
+        <td><label for="email">Email Id:</label></td>
+        <td><input type="email" id="email" placeholder="valid" minlength="10" maxlength="50" required></td>
+      </tr>
+      <tr>
+        <td>
+            <label for="image">Photo:</label></td>
+            <td><input type="file" accept=".jpg" id="image"></td>
+      </tr>
+    
+    </table > </fieldset>
+    <br><br>
+    
+<fieldset id="rd"><legend>Residential Details</legend>
+    <table  cellspacing="20">
+
+    
+    <tr>
+        
+        <td><label for="address">applicant address</label></td>
+        <td colspan="2"><textarea rows="6" cols="20" ></textarea></td>
+        <td><label for="district">District</label></td>
+        <td><select name="" id="district">
+            <option value="select" disabled selected>--select--</option>
+            <option value="suryapet">suryapet</option>
+            <option value="nalgonda">nalgonda</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="secandrabad">secandrabad</option>
+        </select></td>
+    </tr>
+    <tr>
+      <td><label for="mandal">Mandal</label></td>
+      <td><select>
+        <option value="select" disabled selected>--select--</option>
+        <option value="jagireddygudem">jagireddygudem</option>
+        <option value="thungathurthi">thungathurthi</option>
+        <option value="kammam">kammam</option>
+      </select></td>
+      <td>
+      <lebel for="village">Village:</lebel></td>
+      <td><select>
+        <option value="select">--select--</option>
+        <option value="adivemula">adivemula</option>
+        <option value="dosapad">dosapad</option>
+        <option value="rampuram">rampuram</option>
+      </select></td>
+      <tr>
+        <td><label for="pin">pincode</label></td>
+        <td><input type="text"></td>
+      </tr>
+    </tr>
+
+</table>
+</fieldset>
+<br><br>
+
+<fieldset id="pd"> <legend>passtype Details</legend>
+<table cellspacing="20">
+    <tr>
+        <td><label for="city">city</label></td>
+        <td><select>
+            <option value="select" disabled selected>--select--</option>
+            <option value="mumbai">mumbai</option>
+            <option value="goa">goa</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td><label for="pass">passtype</label></td>
+        <td><select>
+            <option value="select" disabled selected>--select--</option>
+        </select></td>
+    </tr>
+</table></fieldset><br><br>
+<fieldset id="pt"><legend>payment type</legend>
+<table>
+    <tr>
+        <td><label for="payment">payment</label></td>
+        <td><select>
+            <option value="select" disabled selected>--select--</option>
+            <option value="online">online</option>
+            <option value="cash">cash</option>
+        </select></td>
+    </tr>
+</table></fieldset>
+<br>
+<input type="submit" id="submit">
+</form>
+</center>
+</body>
+</html>
